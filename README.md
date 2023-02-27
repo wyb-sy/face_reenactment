@@ -21,31 +21,36 @@ keywords: audio-driven, Nerf, landmark, video
 - [project page](https://geneface.github.io/)
 - [paper](https://openreview.net/forum?id=YfwMIDhPccD)
 - [code](https://github.com/yerfor/GeneFace)
+
 comment: HuBert的使用比较有借鉴意义，尤其是在工程上
 
 ### \[arxiv] Diffused Heads: Diffusion Models Beat GANs on Talking-Face Generation
 keywords: audio-driven, diffusion, 
 - [project page](https://mstypulkowski.github.io/diffusedheads/)
 - [paper](https://arxiv.org/abs/2301.03396)
+
 comment: 依据前两帧推后一帧，可能有误差累积，从展示视频来看效果比DiffTalk好一点，展示视频中没有长视频。
 
 ### \[arxiv] DiffTalk: Crafting Diffusion Models for Generalized Talking Head Synthesis
 keywords: Diffusion, landmark, audio-driven
 - [paper](https://arxiv.org/abs/2301.03786)
 - [video](https://cloud.tsinghua.edu.cn/f/e13f5aad2f4c4f898ae7/)
-comment: 时序不稳定，不好说是diffusion的问题还是前面和landmark一起fusion的问题。使用diffusion应该也是个趋势。
+
+- comment: 时序不稳定，不好说是diffusion的问题还是前面和landmark一起fusion的问题。使用diffusion应该也是个趋势。
 
 ## 2022
 ### \[Arxiv] SPACE: Speech-driven Portrait Animation with Controllable Expression
 keywords: audio-driven, 3D FOMM, video, emotion
 - [project page](https://deepimagination.cc/SPACEx/), 
 - [paper](https://arxiv.org/pdf/2211.09809), 
+
 comment: 只使用LSTM就能达到一个比较精准的面部landmark预测，比较有意思，而且生成效果非常好，会是很好的工业界应用。但文中提到的表情的引入效果不是很明显。
 
 ### \[FG] StyleMask: Disentangling the Style Space of StyleGAN2 for Neural ace Reenactment
 keywords: stylegan
 - [paper](https://arxiv.org/pdf/2209.13375)
 - [code](https://github.com/StelaBou/StyleMask)
+
 comment: 还没咋看, 好像挺独特
 
 ### \[] 
@@ -59,6 +64,7 @@ keywords: flow, landmark (interesting),
 - [project page](https://meta-portrait.github.io), 
 - [paper](https://arxiv.org/abs/2212.08062), 
 - [code](https://github.com/Meta-Portrait/MetaPortrait)
+
 comment: 效果很好，作者指出引入密集landmark对于细粒度的表情变化的捕捉比较有效，但作者使用的landmark提取器是未开源的。文章提取光流的部分使用了global vector来进行指导，比较有借鉴意义。文章提出使用meta-learning来加速微调，对于工业界应用比较有价值，但本人并不太理解为什么会那么有效。提出使用3D-Conv进行超分，idea很直观，有效性待验证。
 
 ### \[arxiv] High-fidelity Facial Avatar Reconstruction from Monocular Video with Generative Priors
@@ -125,12 +131,14 @@ keywords:
 - [project page](https://samsunglabs.github.io/MegaPortraits/)
 - [paper](https://arxiv.org/abs/2207.07621)
 - code [None]
+
 comment: 效果比较惊艳，是3D FOMM的改进版，把直接的三维表示换成了vector，但这样有点粘连的感觉，没有开源，比较遗憾。
 
 ### \[CVPR] Thin-Plate Spline Motion Model for Image Animation
 keywords:
 - [paper](https://arxiv.org/abs/2203.14367), 
 - [code](https://github.com/yoyo-nb/Thin-Plate-Spline-Motion-Model)
+
 comment: FOMM系的改进产品，使用更复杂的变换代替仿射变换
 
 ### \[] Live Speech Portraits: Real-Time Photorealistic Talking-Head Animation
