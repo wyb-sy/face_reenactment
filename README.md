@@ -13,9 +13,46 @@ Comment in Chinese. I will update this document every week if not busy.
 # Paper
 
 ### General keywords: audio-driven, stylegan, transformer, 3D, emotion, video, FOMM (including flow), landmark (not limited to keypoints), wav2lip, Nerf, 3DMM, diffusion, flow
-### Other keyword: pose-controllable, edge map, depth map, 3D FOMM (indicating [this](https://arxiv.org/abs/2011.15126))
+### Other keyword: portrait editing, pose-controllable, edge map, depth map, 3D FOMM (indicating [this](https://arxiv.org/abs/2011.15126))
 
 ## 2023
+### \[ICASSP] DisCoHead: Audio-and-Video-Driven Talking Head Generation by Disentangled Control of Head Pose and Facial Expressions
+keywords: video, portrait editing
+- [project page](https://deepbrainai-research.github.io/discohead/)
+- [paper](https://arxiv.org/abs/2303.07697)
+- [code](https://github.com/deepbrainai-research/discohead)
+
+comment: 力大砖飞代表作。如果我不知道怎么解耦，那就制造解耦的条件。如果我不知道怎么融合信息，那就adain，如果我泛化性一般，那我就对特定人物做微调，对使用场景做限制。毕竟，华丽的方法论不如朴实的模型，朴实的模型不如海量的数据，某种意义上有一些工程实现上的启发（？）。不过有一说一视频展示效果还不错的，有一种米格25飞出3马赫的感觉。
+
+### \[arxiv] Style Transfer for 2D Talking Head Animation
+keywords: video, portrait editing
+- [paper](https://arxiv.org/abs/2303.09799)
+- [code](https://github.com/aioz-ai/AudioDrivenStyleTransfer) (not available for now)
+
+comment: 在这个下面提一嘴，人脸相关的文章不放视频我个人感觉说服力很有限（不是针对这个文章，是针对所有不放视频的）
+
+### \[CVPR] DPE: Disentanglement of Pose and Expression for General Video Portrait Editing
+keywords: video, portrait editing
+- [project page](https://carlyx.github.io/DPE/)
+- [paper](https://arxiv.org/pdf/2301.06281)
+- [code](https://github.com/Carlyx/DPE)
+
+### \[AAAI] StyleTalk: One-shot Talking Head Generation with Controllable Speaking Styles
+keywords: audio-driven, 3DMM, transformer, video, emotion
+- [video](https://www.youtube.com/watch?v=mO2Tjcwr4u8)
+- [paper](https://arxiv.org/abs/2301.01081)
+- [code](https://github.com/FuxiVirtualHuman/styletalk)
+
+comment: 由于只有下半张脸在动，全脸看起来略显僵硬，但音唇同步效果超出预料，transformer在多模态信息融合上还是王者。生成视频看起来不是很能保证speaker的id，可能是受制于3DMM，也可能是因为这不是网络主要关注的部分。几个discriminator的设计是有学习价值的。
+
+### \[ICASSP] Memory-augmented Contrastive Learning for Talking Head Generation
+keywords: audio-driven, landmark, video
+- [video](https://www.youtube.com/watch?v=mO2Tjcwr4u8)
+- [paper](https://arxiv.org/abs/2301.01081)
+- [code](https://github.com/Yaxinzhao97/MACL)
+
+comment: 还没细看，比较独特
+
 ### \[ICLR] GENEFACE: TOWARDS HIGH-FIDELITY AUDIO DRIVEN 3D TALKING FACE SYNTHESIS GENERALIZABLE TO OUT-OF-DOMAIN AUDIO
 keywords: audio-driven, Nerf, landmark, video
 - [project page](https://geneface.github.io/)
